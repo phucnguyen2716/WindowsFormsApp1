@@ -16,5 +16,20 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (txtTaikhoan.Text == "phucga1234" && txtPassword.Text == "123")
+                MessageBox.Show("Do you want to access this account !", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            else
+            {
+                MessageBox.Show("Error account information !", "Warning", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
